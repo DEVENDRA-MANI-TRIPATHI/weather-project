@@ -18,22 +18,22 @@ async function checkWeather(city) {
         document.querySelector(".wind").innerText = data.wind.speed + "km/h";
         switch (data.weather[0].main) {
             case "Clear":
-                weatherIcon.src = "images/clear.png";
+                weatherIcon.src = "Images/clear.png";
                 break;
             case "Clouds":
-                weatherIcon.src = "images/clouds.png";
+                weatherIcon.src = "Images/clouds.png";
                 break;
             case "Rain":
-                weatherIcon.src = "images/rain.png";
+                weatherIcon.src = "Images/rain.png";
                 break;
             case "Snow":
-                weatherIcon.src = "images/snow.png";
+                weatherIcon.src = "Images/snow.png";
                 break;
             case "Drizzle":
-                weatherIcon.src = "images/drizzle.png";
+                weatherIcon.src = "Images/drizzle.png";
                 break;
             case "Mist":
-                weatherIcon.src = "images/mist.png";
+                weatherIcon.src = "Images/mist.png";
                 break;
         }
         document.querySelector(".weather").style.display = "block";
